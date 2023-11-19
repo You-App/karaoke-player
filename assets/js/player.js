@@ -49,6 +49,7 @@ function loadKar(kar){
 function loadText(kar){
 	var lyricsText=kar.getText();
 	var res=document.getElementById("result");
+	var resultBuffer = encoding.convert(nameString, 'ASCII', 'UTF-8');
 	res.innerText="";
 	for(var trk in lyricsText){
 		res.innerText+="Track "+trk+"\n";
